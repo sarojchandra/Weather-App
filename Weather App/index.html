@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/1779/1779940.png"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="searchBox">
+        <input
+          id="inputBox"
+          type="text"
+          placeholder="Enter your city name"
+          spellcheck="false"
+        />
+        <button class="btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="locationNotFound">
+        <h1>sorry,location not found</h1>
+        <img src="images/404.png" alt="Location Not Found" width="80%" />
+      </div>
+
+      <div class="weatherBody">
+        <div class="info">
+          <div class="cityName"></div>
+          <div class="dateTime"></div>
+        </div>
+
+        <img
+          src="images/cloud.png"
+          alt="weather image"
+          id="weatherImg"
+          width="50%"
+        />
+
+        <div class="weather-box">
+          <div class="tempreture">
+            28<span><sup>°C</sup></span>
+          </div>
+          <div class="description">claudy</div>
+          <div class="feel"></div>
+        </div>
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="text">
+              <span id="humidity">45%</span>
+              <p>Humidity</p>
+            </div>
+           </div>
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+              <span id="wind-speed">12km/h</span>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+        <div class="sunDetails">
+          <div class="sunBox">
+            <p>🌅Sunrise</p>
+            <div class="sunrise">05:18 am</div>
+          </div>
+          <div class="sunBox">
+            <p>🌇Sunset</p>
+            <div class="sunset">18:47 pm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
